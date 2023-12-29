@@ -11,8 +11,34 @@ a {
 
 ul {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+
+/*! ----------HEADER-----------  */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .header-nav-logo {
     color:#4D5AE5;
     font-family: 'Raleway', sans-serif;
@@ -63,8 +89,13 @@ ul {
     color: #404BBF;
 }
 
-.title {
+/*! ---------------------------- */
+
+/*! ----------Title -----------  */
+
+.container-title {
     background-color: #2E2F42;
+    padding: 188px 472px 292px 472px;
 }
 
 .title-main {
@@ -74,7 +105,8 @@ ul {
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #FFF;
- 
+        margin-bottom: 48px;   
+        max-width: 496px;
 }
 
 .button {
@@ -95,9 +127,27 @@ ul {
         background-color: #404BBF;
 }
 
+/*! ---------------------------- */
+
+/*! ----------Features -----------  */
 
 .features {
     background-color: #FFFFFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
 }
 
 .features-title {
@@ -106,6 +156,7 @@ ul {
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 
 .features-text {
@@ -114,18 +165,24 @@ ul {
         letter-spacing: 0.02em;
 }
 
+/*! ---------------------------- */
+
+/*! ----------Team -----------  */
+
 .team {
     background-color: #F4F4FD;
+    padding-top: 120px;
 }
 
 .team-title {
-    color: #2E2F42;
+        color: #2E2F42;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        text-transform: capitalize;
+        text-transform: capitalize;  
+        margin-bottom: 72px;     
 }
 
 .team-list-item {
@@ -151,6 +208,14 @@ ul {
         letter-spacing: 0.02em;
 }
 
+/*! ---------------------------- */
+
+/*! ----------Portfolio -----------  */
+
+.portfolio {
+    padding-top: 120px;
+}
+
 .portfolio-title {
     color:  #2E2F42;
         text-align: center;
@@ -159,10 +224,11 @@ ul {
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 
 .portfolio-name {
-color: #2E2F42;
+    color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -174,6 +240,10 @@ color: #2E2F42;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
+
+/*! ---------------------------- */
+
+/*! ----------Footer -----------  */ 
 
 .footer {
     background-color: #2E2F42;;
@@ -205,3 +275,5 @@ color: #2E2F42;
         letter-spacing: 0.02em;
         color: #F4F4FD;
 }
+
+/*! ---------------------------- */
