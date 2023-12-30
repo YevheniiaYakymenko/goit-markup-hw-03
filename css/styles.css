@@ -252,7 +252,7 @@ img {
 }
 
 .team-subcribe {
-    padding: 32px 16px;
+    padding: 32px 0;
 
 }
 .team-name {
@@ -279,10 +279,6 @@ img {
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
-}
-
-.portfolio-container {
-border-bottom: 1px solid #E7E9FC;
 }
 
 .portfolio-title {
@@ -312,6 +308,7 @@ border-bottom: 1px solid #E7E9FC;
 
 .portfolio-subscribe {
     padding: 32px 16px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .portfolio-name {
     color: #2E2F42;
