@@ -34,11 +34,20 @@ img {
 }
 
 /*! ----------HEADER-----------  */
-
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
 .header-nav-logo {
     color:#4D5AE5;
     font-family: 'Raleway', sans-serif;
@@ -48,6 +57,8 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    
     
 }
 .header-logo-web {  
@@ -60,12 +71,20 @@ img {
         text-transform: uppercase;
 }
 
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
 .header-list-item {
         color: #2E2F42;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: block;
 }
 
 .header-list .header-list-item:hover,
@@ -75,7 +94,14 @@ img {
 
 .address {
     font-style: normal;
+    margin-left: auto;
 }
+
+.address-link {
+    display: flex;
+    gap: 40px;
+}
+
 .link {
         color: #434455;
         font-size: 16px;
@@ -93,7 +119,7 @@ img {
 
 /*! ----------Title -----------  */
 
-.container-title {
+.title {
     background-color: #2E2F42;
     padding: 188px 472px 292px 472px;
 }
@@ -105,8 +131,10 @@ img {
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #FFF;
-        margin-bottom: 48px;   
+        margin: 0 auto;  
         max-width: 496px;
+        padding-bottom: 48px;
+
 }
 
 .button {
@@ -117,6 +145,14 @@ img {
             line-height: 1.5;
             letter-spacing: 0.04em;
             cursor: pointer;
+            border-radius: 4px;
+            background: #4D5AE5;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            padding: 16px 32px;
+            display: flex;
+            margin: 0 auto;
+
+
 }
 
 .title .button:hover,
@@ -150,6 +186,14 @@ img {
             overflow: hidden;
 }
 
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    width: calc((100% - 24 * 3) / 4);
+}
 .features-title {
     color: #2E2F42;
         font-size: 20px;
@@ -172,6 +216,7 @@ img {
 .team {
     background-color: #F4F4FD;
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -185,13 +230,24 @@ img {
         margin-bottom: 72px;     
 }
 
+.team-title-list {
+    display: flex;
+    gap: 24px;
+
+}
+
 .team-list-item {
     background-color: #FFFFFF;
+    width: calc((100% - 24 * 3) / 4);
 }
 .team-photo-item {
     background-color: #FFFFFF;
 }
 
+.team-subcribe {
+    padding: 32px 16px;
+
+}
 .team-name {
     color: #2E2F42;
         text-align: center;
@@ -199,6 +255,7 @@ img {
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        padding-bottom: 8px;
 }
 
 .team-text {
@@ -212,8 +269,9 @@ img {
 
 /*! ----------Portfolio -----------  */
 
-.portfolio {
+.portfolio-container {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -227,12 +285,32 @@ img {
         margin-bottom: 72px;
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-item {
+    border-bottom: 1px solid #E7E9FC;
+    background: #FFF;
+    width: calc((100% - 24 * 2) / 3);
+}
+
+.portfolio-photo {
+    margin: 0 auto;
+}
+
+.portfolio-subscribe {
+    padding: 32px 16px;
+}
 .portfolio-name {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
 
 .portfolio-text {
@@ -246,7 +324,9 @@ img {
 /*! ----------Footer -----------  */ 
 
 .footer {
-    background-color: #2E2F42;;
+    background-color: #2E2F42;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .footer-link {
@@ -257,16 +337,12 @@ img {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-bottom: 16px;
+        display: inline-block;
 }
 
 .footer-link-web {
-    color: #F4F4FD;
-        font-family: Raleway;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+        color: #F4F4FD;
 }
 
 .footer-text {
