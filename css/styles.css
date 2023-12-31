@@ -308,7 +308,8 @@ img {
 
 .portfolio-subscribe {
     padding: 32px 16px;
-    border-bottom: 1px solid #E7E9FC;
+    border: 1px solid #E7E9FC;
+    border-top: none;
 }
 .portfolio-name {
     color: #2E2F42;
